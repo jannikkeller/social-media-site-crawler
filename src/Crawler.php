@@ -24,8 +24,9 @@ class Crawler
 
     const APP_ID = '1768633400074543';
     const APP_SECRET = 'fb48b763427ed9a40179d062c8d5dec2';
-    const ACCESS_TOKEN = 'EAAZAIkA2MoS8BAJlVgf8Kj88czshLgjkaJR9XWmQ93ZAZCniEjQbHuKtP6c9NvpCXkQFC4v0OoPb3VlrRePXM9CT7PFsW6gh6iKm6oCFYejmgrOy0RHJukQdv0D32Hd5nMZBDl8bMVAmn57yhoFue4MwiZAnqTiXP4l8JenY9QAZDZD';
-    const FILENAME = 'posts_count.csv';
+    const ACCESS_TOKEN = 'EAAZAIkA2MoS8BAJ2r2GhrkamFaWXfaD3B7woK77XcNvBgbuMcRiZCn6oq4H46b4sHZBDuIJSvtLRFNn4ZAGvxbqeTrVknAQ6A8vZB2mUfS7XZCPSgMj3MtEkUWucobSbTZBO7WT0gC2NLBRWiJ3MLmsZAuW9OZBZAjtBQRQW9Fq6uO9AZDZD';
+    const FILE_OUTPUT = 'output.csv';
+    const FILE_INPUT = 'input.csv';
 
     public function __construct()
     {
@@ -50,14 +51,10 @@ class Crawler
         }
     }
 
-    // TODO: Read from csv file
-    private function getPageIds() {
-
-        $pageIds = array(
-            'adidas',
-            'airbus',
-            'bilfinger'
-        );
+    private function getPageIds()
+    {
+        $pageIdsString = file_get_contents(self::FILE_INPUT);
+        $pageIds = explode(',', $pageIdsString);
 
         return $pageIds;
     }
@@ -134,7 +131,7 @@ class Crawler
 
     private function createCsv()
     {
-        $this->file = fopen(self::FILENAME, 'w');
+        $this->file = fopen(self::FILE_OUTPUT, 'w');
         fputcsv($this->file, array(
             'pageID',
             'month',
