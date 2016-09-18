@@ -1,5 +1,6 @@
 {
     "require": {
-        "facebook/graph-sdk": "^5.3"
+        "facebook/graph-sdk": "^5.3",
+        "simplon/twitter": "^0.2.4"
     }
 }

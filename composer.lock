@@ -4,9 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "807a0f9d15a8f34b88dcbdec41164008",
-    "content-hash": "4aaec49b7f1138f21386c8172c6d6a1f",
+    "hash": "b0c337632fcfd6b958aacf304804f17c",
+    "content-hash": "463e382c9cfd030fb439d0fb550c2277",
     "packages": [
+        {
+            "name": "danielstjules/stringy",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danielstjules/Stringy.git",
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
+                "reference": "3cf18e9e424a6dedc38b7eb7ef580edb0929461b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stringy\\": "src/"
+                },
+                "files": [
+                    "src/Create.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel St. Jules",
+                    "email": "danielst.jules@gmail.com",
+                    "homepage": "http://www.danielstjules.com"
+                }
+            ],
+            "description": "A string manipulation library with multibyte support",
+            "homepage": "https://github.com/danielstjules/Stringy",
+            "keywords": [
+                "UTF",
+                "helpers",
+                "manipulation",
+                "methods",
+                "multibyte",
+                "string",
+                "utf-8",
+                "utility",
+                "utils"
+            ],
+            "time": "2015-02-10 06:19:18"
+        },
         {
             "name": "facebook/graph-sdk",
             "version": "5.3.1",
@@ -63,6 +119,142 @@
                 "sdk"
             ],
             "time": "2016-08-09 11:32:26"
+        },
+        {
+            "name": "simplon/helper",
+            "version": "0.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fightbulc/simplon_helper.git",
+                "reference": "7921201862cedf56956718796f24d62b8cb96168"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fightbulc/simplon_helper/zipball/7921201862cedf56956718796f24d62b8cb96168",
+                "reference": "7921201862cedf56956718796f24d62b8cb96168",
+                "shasum": ""
+            },
+            "require": {
+                "danielstjules/stringy": "1.9.*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Simplon\\Helper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tino Ehrich",
+                    "email": "tino@bigpun.me",
+                    "role": "developer"
+                }
+            ],
+            "description": "Helpers for recurring requirements.",
+            "homepage": "https://github.com/fightbulc/simplon_helper",
+            "keywords": [
+                "helper",
+                "strings",
+                "value objects"
+            ],
+            "time": "2015-09-01 07:06:05"
+        },
+        {
+            "name": "simplon/request",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fightbulc/simplon_request.git",
+                "reference": "9cc18ef5ae88b7c17cb6195028968d65720a8b99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fightbulc/simplon_request/zipball/9cc18ef5ae88b7c17cb6195028968d65720a8b99",
+                "reference": "9cc18ef5ae88b7c17cb6195028968d65720a8b99",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Simplon\\Request\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tino Ehrich",
+                    "email": "tino@bigpun.me",
+                    "role": "developer"
+                }
+            ],
+            "description": "Simple, straight forward request helper",
+            "homepage": "https://github.com/fightbulc/simplon_request",
+            "keywords": [
+                "auth",
+                "curl",
+                "get",
+                "jsonrpc",
+                "post",
+                "request"
+            ],
+            "time": "2015-09-09 14:10:49"
+        },
+        {
+            "name": "simplon/twitter",
+            "version": "0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fightbulc/simplon_twitter.git",
+                "reference": "fb32875a3e7090ddeac8c8fc3d2f5b8350111dd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fightbulc/simplon_twitter/zipball/fb32875a3e7090ddeac8c8fc3d2f5b8350111dd4",
+                "reference": "fb32875a3e7090ddeac8c8fc3d2f5b8350111dd4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "simplon/helper": "0.11.*",
+                "simplon/request": "0.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Simplon\\Twitter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tino Ehrich",
+                    "email": "tino@bigpun.me",
+                    "role": "developer"
+                }
+            ],
+            "description": "Twitter API Library w/ OAuth",
+            "homepage": "https://github.com/fightbulc/simplon_twitter",
+            "keywords": [
+                "api",
+                "http",
+                "oauth",
+                "twitter"
+            ],
+            "time": "2016-03-14 10:10:06"
         }
     ],
     "packages-dev": [],

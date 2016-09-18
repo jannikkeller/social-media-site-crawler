@@ -68,7 +68,7 @@ Vagrant.configure(2) do |config|
      sudo apt-get update
 
      # Installing php
-     sudo apt-get install php5-cli
+     sudo apt-get install php5-cli php5-curl
 
      # Installing composer
      php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
