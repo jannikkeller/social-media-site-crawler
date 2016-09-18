@@ -22,9 +22,9 @@ class Crawler
     private $content;
     
 
-    const APP_ID = '1768633400074543';
-    const APP_SECRET = 'fb48b763427ed9a40179d062c8d5dec2';
-    const ACCESS_TOKEN = 'EAAZAIkA2MoS8BAJ2r2GhrkamFaWXfaD3B7woK77XcNvBgbuMcRiZCn6oq4H46b4sHZBDuIJSvtLRFNn4ZAGvxbqeTrVknAQ6A8vZB2mUfS7XZCPSgMj3MtEkUWucobSbTZBO7WT0gC2NLBRWiJ3MLmsZAuW9OZBZAjtBQRQW9Fq6uO9AZDZD';
+    const APP_ID = '';
+    const APP_SECRET = '';
+    const ACCESS_TOKEN = '';
     const FILE_OUTPUT = 'output.csv';
     const FILE_INPUT = 'input.csv';
 
